@@ -1,4 +1,4 @@
-# vue2020s
+# vue2020s vue3.0
 
 ## Project setup
 ```
