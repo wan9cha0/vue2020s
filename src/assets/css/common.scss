@@ -1,0 +1,465 @@
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+dd,
+dl,
+input,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: normal;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*清除默认点击闪动效果*/
+}
+
+span {
+  display: inline-block;
+}
+
+i {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: 16px / 1.14 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font: 10px / 1.14 effra,Helvetica,Arial,sans-serif;*/
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga', 'kern';
+  /*消除文字锯齿*/
+}
+
+
+/*默认配置*/
+
+@media screen and (min-width:321px) and (max-width:375px) {
+  html {
+    font-size: 11px
+  }
+}
+
+@media screen and (min-width:376px) and (max-width:414px) {
+  html {
+    font-size: 12px
+  }
+}
+
+@media screen and (min-width:415px) and (max-width:639px) {
+  html {
+    font-size: 15px
+  }
+}
+
+@media screen and (min-width:640px) and (max-width:719px) {
+  html {
+    font-size: 20px
+  }
+}
+
+@media screen and (min-width:720px) and (max-width:749px) {
+  html {
+    font-size: 22.5px
+  }
+}
+
+@media screen and (min-width:750px) and (max-width:799px) {
+  html {
+    font-size: 23.5px
+  }
+}
+
+@media screen and (min-width:800px) {
+  html {
+    font-size: 25px
+  }
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*-webkit-user-modify:read-write-plaintext-only;*/
+  /*可编辑模式*/
+}
+
+img {
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e1e4e8;
+}
+
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="search"],
+select,
+button,
+textarea {
+  -webkit-appearance: none;
+  // border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+button {
+  background: none;
+}
+
+i,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  position: relative;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  opacity: 0;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  cursor: text;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+*[tac] {
+  text-align: center;
+}
+
+.over3line {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -moz-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #aaaaaa;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aaaaaa;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aaaaaa;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #aaaaaa;
+}
+
+
+.button {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 40px;
+  cursor: pointer
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #4961ff;
+  box-shadow: 0 2px 30px rgba(62, 174, 255, .3);
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transform: translateZ(-20px);
+  transform: translateZ(-20px);
+  z-index: -1;
+  transition: all .5s;
+}
+
+
+.button:hover:before {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+/* 垂直居中 */
+
+.align_center {
+  align-items: center;
+}
+
+/* 与交叉轴两端对齐，轴线之间的间隔平均分布 */
+
+.align_content {
+  align-content: space-between;
+}
+
+/* 交叉轴的终点对齐。 */
+
+.align_end {
+  align-items: flex-end;
+}
+
+/* 交叉轴的终点对齐。 */
+
+.justify_end {
+  justify-content: flex-end;
+}
+
+/* 换行，第一行在上方 */
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_flow-column {
+  flex-flow: column;
+}
+
+/* 两端对齐，项目之间的间隔都相等 */
+
+.justify_content_between {
+  justify-content: space-between;
+}
+
+/* 右对齐 */
+
+.justify_flex_end {
+  justify-content: flex-end;
+}
+
+/* 主轴为垂直方向，起点在上沿 */
+
+.direction_column {
+  flex-direction: column
+}
+
+/* 水平居中 */
+
+.justify_center {
+  justify-content: center;
+}
+
+/* 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍 */
+
+.justify_content_around {
+  justify-content: space-around;
+}
+
+.w-s {
+  width: 100px !important;
+}
+
+.w-b {
+  width: 200px !important;
+  margin-right: 20px;
+}
+
+.cont {
+  width: 100%;
+  position: relative;
+}
+
+@for $i from 1 through 10 {
+  .w#{$i} {
+    width: (50px * $i) !important;
+  }
+}
+
+.cont .el-button--mini,
+.cont .el-button--small {
+  font-size: 14px;
+}
+
+.el-table tr.tableStyle,
+.el-table .tableStyle th {
+  background-color: #e1e4e8;
+  color: #333;
+}
+
+.cont .el-form--label-top .el-form-item__label {
+  padding: 0;
+}
+
+.cont .el-dialog__header {
+  background-color: #e5e9ed;
+}
+
+.cont .el-form-item {
+  margin-bottom: 10px;
+}
+
+.transparent .el-input__inner {
+  background-color: transparent;
+  color: #fff;
+}
+
+.login-box .el-input__inner {
+  border-color: #1BADC0;
+}
+
+.login-box .el-checkbox__inner {
+  background-color: transparent;
+}
+
+.el-button[w100] {
+  width: 100%;
+  font-size: 16px;
+}
+
+.el-table tr.even-row {
+  background-color: #F8F8FA;
+}
+
+.el-table tr.odd-row {
+  background-color: #F1F1F5;
+}
+
+.table-red {
+  color: #FF0000;
+}
+
+.table-blue {
+  color: #1D427A;
+}
+
+.mark.green {
+  font-size: 12px;
+  border-radius: 50%;
+  color: #1DC797;
+  background-color: #F0FFFB;
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-block;
+  min-width: 25px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+
+
+.checks .el-checkbox {
+  position: absolute !important;
+  top: 3px;
+  right: 3px;
+  line-height: 0;
+}
+
+.lines .el-button {
+  padding: 0;
+}
+
+.el-notification__content {
+  margin-top: 3px !important;
+}
+
+.cards-cont .el-badge__content.is-fixed {
+  right: 16px;
+  top: 10px;
+}
+
+.el-table .cell {
+  white-space: nowrap !important;
+  padding: 0 1px;
+  line-height: 36px;
+}
