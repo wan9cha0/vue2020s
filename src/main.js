@@ -7,6 +7,11 @@ import '@/assets/css/common.min.css'
 
 Vue.config.productionTip = false
 
+
+//公共方法
+import Util from '@/util/common'
+Vue.prototype.$util = Util
+
 new Vue({
   router,
   store,
