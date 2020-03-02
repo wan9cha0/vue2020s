@@ -16,3 +16,10 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  position: relative;
+  padding-top: 60px;
+}
+</style>

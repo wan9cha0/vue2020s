@@ -107,7 +107,7 @@ img {
 }
 
 body {
-  background: #e1e4e8;
+  background: #fefefe;
 }
 
 span,
@@ -364,102 +364,4 @@ textarea {
   .w#{$i} {
     width: (50px * $i) !important;
   }
-}
-
-.cont .el-button--mini,
-.cont .el-button--small {
-  font-size: 14px;
-}
-
-.el-table tr.tableStyle,
-.el-table .tableStyle th {
-  background-color: #e1e4e8;
-  color: #333;
-}
-
-.cont .el-form--label-top .el-form-item__label {
-  padding: 0;
-}
-
-.cont .el-dialog__header {
-  background-color: #e5e9ed;
-}
-
-.cont .el-form-item {
-  margin-bottom: 10px;
-}
-
-.transparent .el-input__inner {
-  background-color: transparent;
-  color: #fff;
-}
-
-.login-box .el-input__inner {
-  border-color: #1BADC0;
-}
-
-.login-box .el-checkbox__inner {
-  background-color: transparent;
-}
-
-.el-button[w100] {
-  width: 100%;
-  font-size: 16px;
-}
-
-.el-table tr.even-row {
-  background-color: #F8F8FA;
-}
-
-.el-table tr.odd-row {
-  background-color: #F1F1F5;
-}
-
-.table-red {
-  color: #FF0000;
-}
-
-.table-blue {
-  color: #1D427A;
-}
-
-.mark.green {
-  font-size: 12px;
-  border-radius: 50%;
-  color: #1DC797;
-  background-color: #F0FFFB;
-  cursor: pointer;
-  vertical-align: middle;
-  display: inline-block;
-  min-width: 25px;
-  margin-left: 10px;
-  text-align: center;
-}
-
-
-
-.checks .el-checkbox {
-  position: absolute !important;
-  top: 3px;
-  right: 3px;
-  line-height: 0;
-}
-
-.lines .el-button {
-  padding: 0;
-}
-
-.el-notification__content {
-  margin-top: 3px !important;
-}
-
-.cards-cont .el-badge__content.is-fixed {
-  right: 16px;
-  top: 10px;
-}
-
-.el-table .cell {
-  white-space: nowrap !important;
-  padding: 0 1px;
-  line-height: 36px;
 }

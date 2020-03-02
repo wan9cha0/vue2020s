@@ -4,10 +4,9 @@
       <img src="../assets/logo.png" alt />
     </div>
     <div class="nav">
-      <router-link to="/about">分页1</router-link>
-      <router-link to="/">分页2</router-link>
-      <router-link to="/">分页3</router-link>
-      <router-link to="/">分页4</router-link>
+      <router-link to="/index">首页</router-link>
+      <router-link to="/about">关于</router-link>
+      <router-link to="/page1">分页</router-link>
     </div>
   </div>
 </template>
@@ -40,7 +39,7 @@ export default {
   .nav {
     float: right;
     color: #fff;
-    a{
+    a {
       margin: 0 20px;
     }
   }
